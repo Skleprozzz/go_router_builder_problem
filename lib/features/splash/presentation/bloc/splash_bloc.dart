@@ -7,7 +7,8 @@ part 'splash_state.dart';
 class SplashBloc extends Bloc<SplashEvent, SplashState> {
   SplashBloc() : super(const SplashInitialState()) {
     on<GetConfig>((event, emit) async {
-      Future<void>.delayed(Duration(seconds: 1));
+      // some async logic
+      await Future<void>.delayed(Duration(seconds: 2));
 
       emit(const SplashLoadedState());
     });

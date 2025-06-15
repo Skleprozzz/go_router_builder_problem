@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:go_router_builder_problem/core/router/app_router_base.dart';
+import 'package:go_router_builder_problem/router/app_router_base.dart';
 import 'package:go_router_builder_problem/features/main/presentation/bloc/main_bloc.dart';
 
 class MainRoute extends AppRouterBase {

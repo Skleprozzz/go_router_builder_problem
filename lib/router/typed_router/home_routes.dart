@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:go_router_builder_problem/features/home/presentation/home_page.dart';
 import 'package:go_router_builder_problem/features/main/presentation/main_page.dart';
+import 'package:go_router_builder_problem/features/profile/presentation/profile_page.dart';
+import 'package:go_router_builder_problem/features/settings/presentation/settings_page.dart';
 
 part 'home_routes.g.dart';
 
@@ -19,22 +21,20 @@ final profileNavigatorKey = GlobalKey<NavigatorState>();
         ),
       ],
     ),
-    // TypedStatefulShellBranch<ProfileBranch>(
-    //   routes: [
-    //     TypedGoRoute<AccountRoute>(
-    //       path: '/${AccountRoute.name}',
-    //       name: AccountRoute.name,
-    //       routes: [
-    //         TypedGoRoute<SettingsRoute>(
-    //           path: SettingsRoute.name,
-    //           name: SettingsRoute.name,
-    //           routes: [],
-    //         ),
-
-    //       ],
-    //     ),
-    //   ],
-    // ),
+    TypedStatefulShellBranch<ProfileBranch>(
+      routes: [
+        TypedGoRoute<ProfileRoute>(
+          path: '/${ProfileRoute.name}',
+          name: ProfileRoute.name,
+          routes: [
+            TypedGoRoute<SettingsRoute>(
+              path: SettingsRoute.name,
+              name: SettingsRoute.name,
+            ),
+          ],
+        ),
+      ],
+    ),
   ],
 )
 final class HomeRoute extends StatefulShellRouteData {

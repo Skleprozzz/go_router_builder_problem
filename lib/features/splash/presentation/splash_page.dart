@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:go_router_builder_problem/core/router/app_router_base.dart';
-import 'package:go_router_builder_problem/core/router/typed_router/home_routes.dart';
+import 'package:go_router_builder_problem/router/app_router_base.dart';
+import 'package:go_router_builder_problem/router/typed_router/home_routes.dart';
 import 'package:go_router_builder_problem/features/main/presentation/main_page.dart';
 import 'package:go_router_builder_problem/features/splash/presentation/bloc/splash_bloc.dart';
 

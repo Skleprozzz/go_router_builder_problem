@@ -5,6 +5,7 @@ import 'package:go_router_builder_problem/components/overlays/loading_overlay.da
 import 'package:meta/meta.dart';
 
 export 'package:go_router/go_router.dart';
+export 'go_router.dart';
 
 abstract class AppRouterBase extends GoRouteData {
   const AppRouterBase();

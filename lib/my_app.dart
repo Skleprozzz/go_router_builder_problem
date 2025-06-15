@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:go_router_builder_problem/core/router/go_router.dart';
+import 'package:go_router_builder_problem/router/go_router.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
